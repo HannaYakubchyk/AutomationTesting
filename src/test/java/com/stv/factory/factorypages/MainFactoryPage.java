@@ -11,6 +11,8 @@ public class MainFactoryPage extends FactoryPage {
     @FindBy(xpath = "//button[contains(text(),'Accept All Cookies')]")
     private WebElement trustButton;
 
+
+
     public boolean isAccountLinkDisplayed(){
         return accountLink.isDisplayed();
     }
