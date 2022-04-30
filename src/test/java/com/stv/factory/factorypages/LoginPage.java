@@ -24,7 +24,9 @@ public class LoginPage extends FactoryPage {
 
     public void registerNewCustomer(){
         newCustomerEmailInput.click();
-        newCustomerEmailInput.sendKeys("test@test.by" + Keys.ENTER);
+       // newCustomerEmailInput.sendKeys("test@test.by" + Keys.ENTER);// альтернативно можно перейти и при нажатии Enter
+        newCustomerEmailInput.sendKeys("test@test.by");
+        newCustomerContinueButton.click();
 
 
     }
