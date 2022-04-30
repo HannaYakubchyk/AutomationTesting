@@ -20,6 +20,7 @@ public class MainFactoryTest extends BasicFactoryTest {
         Assert.assertEquals(actualResult, true, "Account link isn't visible");
     }
 
+//почему этот тест не срабатывает с первого раза?
     @Test (description = "Assert the login page is loaded", dependsOnMethods = "assertAccountIconIsDisplayed")
     public void assertLoginPageOpened() {
         mainFactoryPage.clickOnTrustButton();
@@ -27,6 +28,7 @@ public class MainFactoryTest extends BasicFactoryTest {
         Assert.assertEquals(new LoginPage().isLoginContainerDisplayed(), true, "Login page isn't loaded properly");
     }
 
+    //my test
     @Test(description = "Assert new customer is registered")
     public void assertNewCustomerIsRegistered(){
         mainFactoryPage.clickOnTrustButton();
@@ -34,5 +36,7 @@ public class MainFactoryTest extends BasicFactoryTest {
         loginPage.registerNewCustomer();
         Assert.assertEquals(new RegistrationPage().isRegistrationContainerDisplayed(), true, "Registration page isn't loaded properly");
     }
+
+
 
 }

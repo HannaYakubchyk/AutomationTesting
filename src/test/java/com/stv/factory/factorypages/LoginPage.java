@@ -8,7 +8,7 @@ public class LoginPage extends FactoryPage {
     @FindBy(className = "bem-checkout__login-container")
     private WebElement loginContainer;
 
-    @FindBy(className = "bem-forms__form-control")
+    @FindBy(id = "DualRegisterEmailModel_Email")
     private WebElement newCustomerEmailInput;
 
     @FindBy(id = "qa-dual-register")
