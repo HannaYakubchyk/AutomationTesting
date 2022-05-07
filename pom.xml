@@ -39,12 +39,16 @@
         </dependency>
 
 
-        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-devtools-v100 -->
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-devtools-v99 -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-devtools-v100</artifactId>
+            <artifactId>selenium-devtools-v101</artifactId>
             <version>4.1.4</version>
         </dependency>
+
+
+
+
 
 
         <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->

@@ -28,6 +28,5 @@ public class LoginPage extends FactoryPage {
         newCustomerEmailInput.sendKeys("test@test.by");
         newCustomerContinueButton.click();
 
-
     }
 }

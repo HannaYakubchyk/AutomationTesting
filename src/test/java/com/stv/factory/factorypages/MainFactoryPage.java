@@ -25,5 +25,4 @@ public class MainFactoryPage extends FactoryPage {
         trustButton.click();
     }
 
-
 }

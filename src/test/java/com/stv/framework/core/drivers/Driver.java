@@ -20,10 +20,11 @@ public class Driver {
     private static void setChromeDriver()
     {
         String exePath = "/Users/annayakubchik/IBA/Тестирование/chromedriver";
-       System.setProperty("webdriver.chrome.driver", exePath);
+        System.setProperty("webdriver.chrome.driver", exePath);
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setJavascriptEnabled(true);
         driver = new ChromeDriver(capabilities);
+
     }
 
     /**

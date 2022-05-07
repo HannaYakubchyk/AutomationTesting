@@ -4,9 +4,7 @@ import com.stv.framework.core.drivers.Driver;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
-
-import java.util.concurrent.TimeUnit;
-
+import java.time.Duration;
 import static com.stv.framework.core.lib.WigglePageURLs.START_URL;
 
 public class BasicFactoryTest {
@@ -18,7 +16,7 @@ public class BasicFactoryTest {
     public void setUp() {
         WebDriver driver = getDriver();
         driver.get(START_URL);
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10)); //явное ожидание
         driver.manage().window().maximize();
     }
 
