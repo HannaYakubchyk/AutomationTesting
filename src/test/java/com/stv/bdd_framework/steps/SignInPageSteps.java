@@ -15,7 +15,7 @@ public class SignInPageSteps extends BasicTest
     @Given("Sign in and Sign up page is loaded")
     public void sign_in_and_sign_up_page_is_loaded()  {
         //getDriver().get("https://www.wiggle.co.uk/secure/myaccount/logon?returnUrl=%2Fsecure%2Faccount");
-        getDriver().get(START_URL_FOR_LOGIN_PAGE); //
+        getDriver().get(START_URL_FOR_LOGIN_PAGE); 
     }
 
     @When("user enters valid email into Email address field and clicks Continue button")
