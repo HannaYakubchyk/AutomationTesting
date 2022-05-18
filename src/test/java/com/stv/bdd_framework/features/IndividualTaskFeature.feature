@@ -9,8 +9,8 @@ Feature: Testing of wiggle.com as per Individual Task
   Scenario Outline: Repeated Password Input
     When user inputs "<password>" into password field
     And user clicks on checkbox Show Password
-    Then checkbox is switched on
-    When user clicks on checkbox to disable it
+    And checkbox is switched on
+    And user clicks on checkbox to disable it
     And user deletes input from password field
     Then validation message for password field appears
   Examples:

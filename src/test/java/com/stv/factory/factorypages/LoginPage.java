@@ -5,6 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class LoginPage extends FactoryPage {
+
+
     @FindBy(className = "bem-checkout__login-container")
     private WebElement loginContainer;
 
@@ -28,5 +30,8 @@ public class LoginPage extends FactoryPage {
         newCustomerEmailInput.sendKeys("test@test.by");
         newCustomerContinueButton.click();
 
+    }
+    public WebElement getLoginContainer() {
+        return loginContainer;
     }
 }
