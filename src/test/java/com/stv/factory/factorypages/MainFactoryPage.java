@@ -8,6 +8,7 @@ public class MainFactoryPage extends FactoryPage {
     @FindBy(id = "accountLink")
     private WebElement accountLink;
 
+
     @FindBy(xpath = "//button[contains(text(),'Accept All Cookies')]")
     private WebElement trustButton;
 
@@ -25,4 +26,7 @@ public class MainFactoryPage extends FactoryPage {
         trustButton.click();
     }
 
+    public WebElement getTrustButton() {
+        return trustButton;
+    }
 }
